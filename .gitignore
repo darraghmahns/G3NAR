@@ -1,0 +1,54 @@
+# Node dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+.cache/
+.tmp/
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite
+node_modules/.vite/
+.vite/
+
+# Vitest / Coverage
+coverage/
+.vitest/
+
+# Playwright
+playwright-report/
+blob-report/
+test-results/
+playwright/.cache/
+node_modules/.cache/ms-playwright/
+
+# Lighthouse CI
+.lighthouseci/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
