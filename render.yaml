@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: g3nar
+    env: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    pullRequestPreviewsEnabled: true
+    routes:
+      # SPA route for deep links like /art/ventus -> /index.html
+      - type: rewrite
+        source: /art/(.*)
+        destination: /index.html

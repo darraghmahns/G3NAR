@@ -1,0 +1,32 @@
+{
+  "name": "g3nar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "e2e": "playwright test",
+    "postinstall": "playwright install --with-deps || echo 'playwright optional'",
+    "lint": "echo 'add eslint later'",
+    "verify:content": "node scripts/verify-content.mjs",
+    "ci": "npm run test && npm run e2e",
+    "lighthouse": "lhci autorun || echo 'LHCI optional'"
+  },
+  "devDependencies": {
+    "@lhci/cli": "latest",
+    "@playwright/test": "^1.45.0",
+    "@testing-library/dom": "^9.3.4",
+    "@types/node": "^20.12.7",
+    "@vitest/coverage-v8": "^1.6.0",
+    "axe-core": "^4.9.1",
+    "happy-dom": "^14.11.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0",
+    "vitest": "^1.6.0"
+  }
+}
